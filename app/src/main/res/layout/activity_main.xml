@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/use_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User 添加元素"
+        android:onClick="addData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="条件查询"
+        android:onClick="getDataLimit3"
+        app:layout_constraintStart_toEndOf="@+id/use_add"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/use_add" />
+</androidx.constraintlayout.widget.ConstraintLayout>
